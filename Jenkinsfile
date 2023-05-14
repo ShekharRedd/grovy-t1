@@ -14,7 +14,7 @@ pipeline{
         stage("testing"){
             steps{
                 script{
-                    test()
+                    test.call1()
                     echo "hi"
                 }
             }
