@@ -21,9 +21,11 @@ pipeline{
         }        
         stage("building"){
             steps{
-                script{
-                    echo "hello world"
-                }
+                buildapp()
+                // script{
+                //     echo "hello world"
+                // }
+
             }
 
         }
