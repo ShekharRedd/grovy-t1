@@ -21,7 +21,7 @@ pipeline{
         stage("testing"){
             steps{
                 script{
-                    gv.deploy()
+                    gv.test()
                     echo "hi"
                 }
             }
