@@ -1,3 +1,5 @@
+#!/usr/bin/env groovy
+@Library('SharedLib')
 def gv
 pipeline{
     agent any
@@ -12,7 +14,7 @@ pipeline{
         stage("building"){
             steps{
                 script{
-                    gv.build()
+                    buildapp()
                     echo "hello world"
                 }
             }
@@ -21,7 +23,7 @@ pipeline{
         stage("testing"){
             steps{
                 script{
-                    gv.test()
+                    test()
                     echo "hi"
                 }
             }
