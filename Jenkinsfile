@@ -11,15 +11,6 @@ pipeline{
                 }
             }
         }
-        stage("building"){
-            steps{
-                script{
-                    buildapp()
-                    echo "hello world"
-                }
-            }
-
-        }
         stage("testing"){
             steps{
                 script{
@@ -27,7 +18,17 @@ pipeline{
                     echo "hi"
                 }
             }
+        }        
+        stage("building"){
+            steps{
+                script{
+                    
+                    echo "hello world"
+                }
+            }
+
         }
+
 
         }
     }
