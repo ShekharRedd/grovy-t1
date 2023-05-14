@@ -1,7 +1,5 @@
-
 def build(){
     echo "build the application"
-
 }
 def test(){
     echo "testing the application"
