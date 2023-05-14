@@ -8,6 +8,7 @@ def test(){
         sh 'echo $PASSWORD | docker login -u $USERNAME --password-stdin'
         sh "docker push shekhar123reddy/num:34.5"
 }
+}
 
 def deploy(){
     echo "deploy the application"
