@@ -22,7 +22,6 @@ pipeline{
         stage("building"){
             steps{
                 script{
-                    
                     echo "hello world"
                 }
             }
