@@ -12,7 +12,7 @@ pipeline{
         stage("building"){
             steps{
                 script{
-                    // gv=build()
+                    gv=build()
                     echo "hello world"
                 }
             }
@@ -21,7 +21,7 @@ pipeline{
         stage("testing"){
             steps{
                 script{
-                    // gv=deploy()
+                    gv=deploy()
                     echo "hi"
                 }
             }
