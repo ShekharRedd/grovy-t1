@@ -3,7 +3,7 @@ def build(){
 }
 def test(){
     echo "testing the application"
-    withCredentials([usernamePassword(credentialsId:'docker-hub-repo', usernameVariable: 'USERNAME',passwordVariable:'PASSWORD')])
+    withCredentials([usernamePassword(credentialsId:'0672b53e-cc7a-46c7-aad8-bf5e6a6d1325', usernameVariable: 'USERNAME',passwordVariable:'PASSWORD')])
     sh "docker login -u ${USERNAME} -p ${PASSWORD}"
     sh "docker build -t shekhar123reddy/num:34.5"
     sh "docker push shekhar123reddy/num:34.5"
