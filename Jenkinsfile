@@ -7,7 +7,7 @@ pipeline{
         stage("initgroovy"){
             steps{
                 script{
-                    gv=load "script.groovy"
+                    echo "good to see you"
                 }
             }
         }
