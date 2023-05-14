@@ -1,4 +1,4 @@
-#!/usr/bin/env groovy
+
 def build(){
     echo "build the application"
 
