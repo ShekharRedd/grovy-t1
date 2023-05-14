@@ -1,4 +1,3 @@
-
 def gv
 pipeline{
     agent any
@@ -10,15 +9,15 @@ pipeline{
                 }
             }
         }
-        stage("build"){
+        stage("building"){
             steps{
                 script{
-                    gv=test()
+                    gv=build()
                 }
             }
 
         }
-        stage("test"){
+        stage("testing"){
             steps{
                 script{
                     gv=deploy()
